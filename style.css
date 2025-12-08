@@ -1,73 +1,187 @@
-body{
-    font-family: 'Lobster', cursive;
-    margin: 0;
+/* General Setup */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
 }
-h1{
-    font-size: 50px;
+
+/* Colors */
+:root {
+    --primary-color: #8490ff;
+    --primary-hover: #62bdfc;
+    --dark-bg: #04091e;
 }
-.color{
-         color: rgb(241, 182, 70);
+
+.text-primary {
+    color: var(--primary-color) !important;
 }
-.conteiner{
-    display: flex;
-    padding-bottom: 130px;
+
+.ls-2 {
+    letter-spacing: 2px;
 }
-.width{
-    width: 50%;
-    padding-left: 7%;
+
+.section-padding {
+    padding: 100px 0;
 }
-.width img{
-    width: 100%;
-}
-.linkbutton{
-    text-decoration: none;
-    background-image: linear-gradient(orange, tomato );
+
+/* Custom Button */
+.btn-primary-custom {
+    background: linear-gradient(to right, #8490ff, #62bdfc);
+    border: none;
     color: white;
-    font-weight: 700;
-    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.btn-primary-custom:hover {
+    background: linear-gradient(to right, #62bdfc, #8490ff);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(132, 144, 255, 0.3);
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    color: #222;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 90vh;
+    padding-top: 50px;
+}
+
+.hero-img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* The Blue Square Frame behind Hero Image */
+.hero-img-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: transparent;
+    border: 20px solid #f9f9ff;
+    border-image: linear-gradient(to bottom, #8490ff 0%, #ffffff 100%);
+    /* Since we can't do border image perfectly like the design with pure CSS borders easily, 
+       we use a background solid color or an image. 
+       Let's simplify to a solid light blue box for this demo */
+    background: #e6e8ff; 
+    border: none;
+    top: -30px;
+    right: -30px;
+    z-index: -1;
+}
+
+/* Add decorative dots if possible, simplified here */
+.hero-img-wrapper::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#8490ff 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    z-index: -2;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Services Section */
+.service-box {
+    transition: all 0.3s ease;
     border-radius: 5px;
 }
-.banner{
-    background-image: url(images/top-banner.png);
-    background-repeat: no-repeat;
-}
-.dream{
-    background-image: url(images/dream-bg.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    
-}
-.load{
-    width: 100%;
-    box-shadow: 10px 10px 50px gray;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-left: 20px;
-    padding-right: 20px;
-    
-    
 
+.service-box:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
 }
-h2{
-    font-size: 35px;
-}
-.experience-area{
-    background-image: url(images/exp-bg.png);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    
-}
-#devo{
-    border-left: 7px solid;
-    border-image: linear-gradient(blue, cyan) ;
-    border-image-slice: 1;
-}
-#devoo{
-    border-left: 7px solid;
-    border-image: linear-gradient(rgb(0, 255, 191), rgb(130, 240, 4)) ;
-    border-image-slice: 1;
 
+.service-box .icon-box i {
+    color: #222;
+    transition: all 0.3s ease;
 }
-footer p{
+
+.service-box:hover .icon-box i {
+    color: var(--primary-color);
+}
+
+/* Footer */
+.bg-dark-custom {
+    background-color: var(--dark-bg);
+}
+
+.text-secondary {
+    color: #777 !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/* --- Add this to the bottom of style.css --- */
+
+/* Page Banner Area */
+.banner-area {
+    background: #f9f9ff;
+    padding: 100px 0;
     text-align: center;
+}
+
+.banner-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.breadcrumb {
+    background: transparent;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.breadcrumb-item a {
+    color: #222;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--primary-color);
+}
+
+/* Contact Page Specifics */
+.contact-info-item h6 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-info-item p {
+    color: #777;
+    font-size: 14px;
+}
+
+.contact-info-item .icon {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-right: 15px;
 }
