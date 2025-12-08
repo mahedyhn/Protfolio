@@ -2,58 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahedy Hasan Naiem</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Mahedy - Personal Portfolio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="banner conteiner">
-        <div class="width">
-            <h1>Welcome to</h1>
-        <h1><span class="color">Mahedy Hasan </span>Site!</h1>
-        <h3>About Mahedy Hasan Naiem</h3>
-        <p>Motivated and detail-oriented IT professional with a solid foundation in computer science and practical
-experience in software development IT sector. Eager to apply technical skills and problem-solving abilities in a
-challenging IT environment to contribute to organizational success and grow professionally.</p>
-        <a class="linkbutton" target="blank" href="https://www.facebook.com/galibhn/">Contact me</a>
-        </div>
-        <div class="width">
-            <img src="images/images/2--.JPG" alt="">
-        </div>
-    </section>
-    <section class="dream conteiner">
-        <div class="width">
-            <img src="images/1mahedyhn.png" alt="">
 
-        </div>
-        <div class="width">
-            <h1>Dream to be</h1>
-            <h2>Web Devolopment professional</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quaerat temporibus perspiciatis ipsa voluptatem fugit delectus at mollitia, consectetur facilis perferendis quae accusantium iusto distinctio dignissimos architecto. Reiciendis, officiis ipsum.</p>
-            <a class="linkbutton" target="blank" href="https://www.facebook.com/63344333999h/">About Me</a>
-
-        </div>
-    </section>
-
-    <section class="experience-area">
-        <h1>Expericences</h1>
-        <div class="conteiner">
-            <div id="devoo" class="load">
-                <h2 class="color">Programming language</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat modi velit porro repellat qui ullam doloremque dolore saepe ipsa tenetur perspiciatis, voluptatem cupiditate magni animi dolorum odit, praesentium nihil!</p>
-            </div>
-            <div id="devo" class="load">
-                <h2 class="color">Hardware</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptatibus voluptate. Impedit suscipit totam maiores tempora ipsam nisi molestias atque optio consequuntur ipsum amet vitae, quod, exercitationem quia voluptatem ducimus!</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                MAHEDY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/mahedyhn?tab=repositories">Project</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <h6 class="text-uppercase text-primary mb-3 ls-2">This is me</h6>
+                    <h1 class="display-3 fw-bold mb-3">MD. MAHEDY HASAN NAIEM</h1>
+                    <p class="text-muted mb-4 lead">Seeking opportunities across diverse engineering fields. Web Developer with with 1 year of experience in
+Laravel, PHP, MySQL and JavaScript. Skilled in building responsive websites and dynamic web apps.</p>
+                    <a href="https://www.linkedin.com/in/mahedyhn/" class="btn btn-primary-custom px-4 py-2 shadow-sm">DISCOVER NOW</a>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0 text-center position-relative">
+                    <div class="hero-img-wrapper">
+                        <!-- Placeholder Image: Replace with your man in hat image -->
+                        <img src="images/mahedy.JPG" alt="Philip Gilbert" class="img-fluid hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>© Edited By 2022 © Md. Mahedy Hasan Naiem©</p>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <!-- Placeholder Image: Replace with man pointing finger image -->
+                    <img src="images/2ND.png" alt="About Me" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h6 class="text-uppercase text-primary mb-3 ls-2">About Me</h6>
+                    <h2 class="fw-bold mb-4">PERSONAL DETAILS</h2>
+                    <p class="text-muted mb-4">Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <a href="#" class="btn btn-primary-custom px-4 py-2 shadow-sm">VIEW FULL DETAILS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2 class="fw-bold">My Offered Services</h2>
+                    <p class="text-muted">At about this time of year, some months after New Year's resolutions have been made and kept, or made and neglected.</p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-box p-4 bg-white h-100 hover-effect">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-chart-pie fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Web Design</h5>
+                        <p class="text-muted small">It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-box p-4 bg-white h-100 hover-effect">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-laptop-code fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Web Development</h5>
+                        <p class="text-muted small">If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-box p-4 bg-white h-100 hover-effect">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-camera fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Photography</h5>
+                        <p class="text-muted small">Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.</p>
+                    </div>
+                </div>
+              
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-custom text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3">About Me</h6>
+                    
+                    <p class="text-secondary small mt-4">Copyright ©2025 All rights reserved | This template is made
+                        with <i class="fas fa-heart text-primary"></i> by <a href="#"
+                            class="text-primary text-decoration-none">Mahedy</a></p>
+                </div>
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3">Mail me</h6>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control rounded-0 border-0" placeholder="Enter Email Address">
+                        <button class="btn btn-primary-custom rounded-0" type="button"><i
+                                class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Follow Me</h6>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/galibhn/" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/63344333999h" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
